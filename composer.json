@@ -1,0 +1,19 @@
+{
+    "name": "vivierlina/ppbo2024",
+    "description": "Merupakan package untuk latihan pemrograman berorientasi objek",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vivierlina",
+            "email": "h1101231010@student.untan.ac.id"
+        }
+
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4":{
+            "App\\":"App"
+        }
+    }
+}
