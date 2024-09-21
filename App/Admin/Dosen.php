@@ -6,6 +6,6 @@ class Dosen extends Pegawai {
     public string $nidn;
 
     public function mengajar(): void {
-        echo "sedang mengajar perkuliahan";
+        echo "{$this->nama} sedang mengajar perkuliahan";
     }
 }
