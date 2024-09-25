@@ -3,7 +3,7 @@
 namespace App\Admin;
 
 class Pegawai {
-    protected int $nip;
+    public int $nip;
     public string $nama;
     protected int $no_hp;
     public string $alamat;
