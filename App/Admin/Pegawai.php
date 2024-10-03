@@ -2,27 +2,39 @@
 
 namespace App\Admin;
 
-class Pegawai {
+class Pegawai 
+{
     public int $nip;
     public string $nama;
     protected int $no_hp;
     public string $alamat;
 
-    public function cekIn(): bool {
-        // Implementasi cek in
+    public function __construct($nip, $nama, $no_hp, $alamat)
+    {
+        $this->nip = $nip;
+        $this->nama = $nama;
+        $this->no_hp = $no_hp;
+        $this->alamat = $alamat;
+    }
+
+    public function cekIn(): bool 
+    {
         return true;
     }
 
-    public function cekOut(): bool {
-        // Implementasi cek out
+    public function cekOut(): bool 
+    {
         return true;
     }
 
-    public function getNoHp(): int {
+    public function getNoHp(): int 
+    {
         return $this->no_hp;
     }
 
-    public function setNoHp(int $no_hp): void {
+    public function setNoHp(int $no_hp): void 
+    {
         $this->no_hp = $no_hp;
+        echo "Nomor Telepon Baru : ". $this->no_hp;
     }
 }
