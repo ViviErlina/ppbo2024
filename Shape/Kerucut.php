@@ -1,5 +1,6 @@
 <?php
 
+
 class Kerucut
 {
     const PHI = 3.14;
