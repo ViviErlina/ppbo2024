@@ -1,6 +1,8 @@
 <?php
 
-require_once 'App/Admin/Dosen.php';
+use App\Model\Akademik\Dosen;
 
-$dian = new \App\Admin\Dosen(198411132015041001, "Dian Prawira", 62111111, "Jln Purnama", "0013118405");
-$dian->mengajar();
+require_once 'vendor/autoload.php';
+
+$dian = new Dosen("Dian Prawira", "081234567890");
+echo "no_hp: " . $dian->getNoHp();

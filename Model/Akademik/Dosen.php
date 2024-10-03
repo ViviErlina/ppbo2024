@@ -7,7 +7,7 @@ require_once 'Pegawai.php';
 
 class Dosen extends Pegawai 
 {
-    public string $nidn;
+    private string $nidn;
 
     public function __construct($nip, $nama, $no_hp, $alamat, $nidn)
     {
@@ -20,3 +20,15 @@ class Dosen extends Pegawai
     echo "{$this->nama} sedang mengajar perkuliahan";
     }
 }
+
+class Dosen {
+    private $nidn;
+    public $nama;
+
+    public function __construct($nama) {
+        $this->nama = $nama;
+    }
+}
+
+$dian = new Dosen("Dian Prawira");
+$dian->nidn = 1000121184001;
